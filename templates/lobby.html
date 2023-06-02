@@ -1,0 +1,63 @@
+{% extends 'main.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<main>
+
+    <section id="form-container">
+        
+        <img id="logo" src="{%static 'images/chat-icon.png' %}" alt="" />
+
+        <div id = "welcome-message">
+            <h1>Welcome to ChatGDP</h1>
+            <p>ChatGDP is free and simple to use video calling tool, allows you to stay in touch with your loved ones.</p>
+        </div>
+
+        <form action="" id="form">
+
+            <div class="form-field">
+                <input type="text" name="room" placeholder = "Enter the Room Name ...." style="text-transform: uppercase" />
+            </div>
+            <div class="form-field">
+                <input type="text" name="username" placeholder = "Enter the Your Name ...." style="text-transform: uppercase" />
+            </div>
+            <div class="form-field">
+                <input type="submit" value="Join Stream"/>
+            </div>
+            
+           
+        </form>
+
+    </section>
+
+</main>
+<script type = 'text/javascript'>
+    let form = document.getElementById('form')
+
+    let handleSubmit = async (e) =>{
+        e.preventDefault()
+
+        let room = e.target.room.value.toUpperCase()
+        let name = e.target.username.value.toUpperCase()
+
+        let response = await fetch(`/get_token/?channel=${room}`)
+        let data = await response.json()
+
+        let UID = data.uid
+        let token = data.token
+
+        sessionStorage.setItem('UID',UID)
+        sessionStorage.setItem('token',token)
+        sessionStorage.setItem('room',room)
+        sessionStorage.setItem('name',name)
+
+        window.open('/room/', '_self')
+    }
+
+    form.addEventListener('submit', handleSubmit)
+</script>
+
+
+{% endblock content %}
