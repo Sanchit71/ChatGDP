@@ -24,9 +24,3 @@ You must change the agora credentials in views.py and script.js in order to util
 Go to agora.io and register to create an app. Once your app is created, you should alter views.py and script.js by copying the appid and appCertificate.
 #### 4 - Run the server
 
-## Images
-![Login Page](<Screenshot 2023-06-11 002209.png>)
-
-![One Memeber in Room](<Screenshot 2023-06-11 002248.png>)
-
-![Two member in a Room](<Screenshot 2023-06-11 002647.png>)
