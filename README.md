@@ -19,6 +19,7 @@ Maximum 10 members are allowed in a room.
 #### 1 - Clone the repository
 #### 2 - Install the requirements
 #### 3 - Update Agora Credentials
-In order to use this project you will need to replace the agora credentials in views.py and streams.js.
-Create an account at agora.io and create an app. Once you create your app, you will want to copy the appid & appCertificate to update views.py and streams.js.
+You must change the agora credentials in views.py and script.js in order to utilise this project.
+
+Go to agora.io and register to create an app. Once your app is created, you should alter views.py and script.js by copying the appid and appCertificate.
 #### 4 - Run the server
