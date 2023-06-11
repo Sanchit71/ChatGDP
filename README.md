@@ -26,4 +26,4 @@ Go to agora.io and register to create an app. Once your app is created, you shou
 
 ## Demo
 ![Login Page](https://github.com/Sanchit71/ChatGDP/assets/102990660/b28c664c-2777-4264-9fe0-e979b5803aa7)
-![Chat Room](https://github.com/Sanchit71/ChatGDP/assets/102990660/45644624-389e-42f1-aead-a7d39cbb2942)
+<!-- ![Chat Room](https://github.com/Sanchit71/ChatGDP/assets/102990660/45644624-389e-42f1-aead-a7d39cbb2942) -->
